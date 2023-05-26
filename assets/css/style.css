@@ -230,13 +230,13 @@ color: #2F4858;
         padding-right: 15px !important;
     }
     .home-section{
-        height: 50vh !important;
+        height: 35vh !important;
     }
     .top-bar{
         display: none !important;
     }
     .home-into{
-        height: 45vh !important;
+        height: 30vh !important;
     }
     .home-section .owl-theme .owl-dots .owl-dot span{
         display: none !important;
