@@ -189,7 +189,7 @@ color: #2F4858;
         padding-right: 15px !important;
     }
     .home-section{
-        height: 80vh !important;
+        height: 100vh !important;
     }
     .navbar-toggler{
         margin-left: auto !important;
@@ -230,7 +230,7 @@ color: #2F4858;
         padding-right: 15px !important;
     }
     .home-section{
-        height: 35vh !important;
+        height: 45vh !important;
     }
     .top-bar{
         display: none !important;
@@ -349,10 +349,28 @@ color: #2F4858;
     height: 100%  !important;
     object-position: cover !important;
 }
-.new-in-section .today-prices{
-    border-right: 1px solid #878787 !important;
-    border-bottom: 1px solid #878787 !important;
+.divider{
+    width: 1px !important;
+    height: 40px !important;
+    background: #7b93ba !important;
+    display: inline-block;
+    text-align: end !important;
 }
+.line{
+    top: 10px !important;
+}
+.dividera{
+    display: none !important;
+    width: 50px !important;
+    height: 1px !important;
+    background: #7b93ba !important;
+    display: inline-block;
+    text-align: center !important;
+}
+.linea{
+    text-align: center !important;
+}
+
 .new-in-section .owl-carousel{
     position: relative;
     display: flex !important;
@@ -392,10 +410,15 @@ color: #2F4858;
     }
 }
 @media (max-width:576px){
+    .dividera{
+        display: block !important;
+    }
+    .divider{
+        display: none !important;
+    }
     .shop-btn{
         display: none !important;
     }
-    
 }
 @media (max-width:320px){
     .slider-content1 .new-card-img img{
@@ -638,9 +661,9 @@ color: #2F4858;
 
 
 /* --promise-SECTION-styling-Start-from-here--- */
-.promise-section .border-card{
+/* .promise-section .border-card{
     border-right: 1px solid var(--color-blue) !important;   
-}
+} */
 @media (max-width:576px){
     .promise-section .border-card{
         border-right: none !important;   
@@ -828,3 +851,20 @@ color: #2F4858;
 /* ----------About-section-styling-End-from-here---- */
 
 
+.offcanvas-body .nav-link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px ;
+}
+.offcanvas-body .nav-link.active{
+    color: var(--color-primary) !important;
+}
+
+.closed-icon i{
+    border: 1px solid #666565 !important;
+    color: #666565 !important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+}

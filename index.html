@@ -41,9 +41,21 @@
 						</div>
 						<div class="col-4">
 							<div class="row justify-content-end" style="z-index: 99999 !important;">
-								<div class="col-2"><span><img src="./assets/images/search-normal.png" class="img-fluid" type="button" alt="arrow-icon"></span></div>
-								<div class="col-2"><span><img src="./assets/images/Buy.png" class="img-fluid" type="button" alt="arrow-icon"></span></div>
-								<div class="col-2"><span><img src="./assets/images/heart.png" class="img-fluid" type="button" alt="arrow-icon"></span></div>
+								<div class="col-2">
+									<a href="#">
+										<img src="./assets/images/search-normal.png" class="img-fluid" type="button" alt="arrow-icon">
+									</a>
+								</div>
+								<div class="col-2">
+									<a href="#">
+										<img src="./assets/images/Buy.png" class="img-fluid" type="button" alt="arrow-icon">
+									</a>
+								</div>
+								<div class="col-2">
+									<a href="#">
+										<img src="./assets/images/heart.png" class="img-fluid" type="button" alt="arrow-icon">
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -55,10 +67,14 @@
 						<div class="col-3">
 							<div class="row">
 								<div class="col-5">
-									<img src="./assets/images/menu.png" class="img-fluid" alt="">
+                                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <img src="./assets/images/menu.png" class="img-fluid" alt="">
+                                    </a>
 								</div>
 								<div class="col-5">
-									<img src="./assets/images/heart.png" class="img-fluid" alt="">
+									<a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+										<img src="./assets/images/heart.png" class="img-fluid" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
@@ -70,7 +86,9 @@
 						<div class="col-3 text-end">
 							<div class="row justify-content-end">
 								<div class="col-5">
-									<img src="./assets/images/search-normal.png" class="img-fluid" alt="">
+									<a data-bs-toggle="offcanvas" href="#offcanvasExampleTwo" role="button" aria-controls="offcanvasExampleTwo">
+										<img src="./assets/images/search-normal.png" class="img-fluid" alt="">
+									</a>
 								</div>
 								<div class="col-5">
 									<img src="./assets/images/Buy.png" class="img-fluid" alt="">
@@ -181,24 +199,38 @@
 					<div class="today-prices text-center">
 						<h1 class="text-gold">24 K</h1>
 						<h3 class="mt-3 text-dark">235.47995 QAR</h3>
+						<div class="dividera text-center"></div>
 					</div>
 				</div>
+				
 				<div class="col-5 col-sm-5 col-md-4 col-lg-2">
-					<div class="today-prices text-center">
+					<div class="today-prices text-center position-relative">
 						<h1 class="text-gold">22 K</h1>
 						<h3 class="mt-3 text-dark">235.47995 QAR</h3>
+						<div class="dividera text-center"></div>
+						<div class="line text-start position-absolute">
+							<div class="divider"></div>
+						</div>
 					</div>
 				</div>
 				<div class="col-5 col-sm-5 col-md-3 col-lg-2">
-					<div class="today-prices text-center">
+					<div class="today-prices text-center position-relative">
 						<h1 class="text-gold">21 K</h1>
 						<h3 class="mt-3 text-dark">235.47995 QAR</h3>
+						<div class="dividera text-center"></div>
+						<div class="line text-start position-absolute">
+							<div class="divider"></div>
+						</div>
 					</div>
 				</div>
 				<div class="col-5 col-sm-5 col-md-3 col-lg-2">
-					<div class="today-prices text-center">
+					<div class="today-prices text-center position-relative">
 						<h1 class="text-gold">18 K</h1>
 						<h3 class="mt-3 text-dark">235.47995 QAR</h3>
+						<div class="dividera text-center"></div>
+						<div class="line text-start position-absolute">
+							<div class="divider"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -965,6 +997,9 @@
 							<h4 class="text-center mt-4 text-blue">
 								Fast Delivery
 							</h4>
+							<div class="line text-start position-absolute">
+								<div class="divider"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -975,6 +1010,9 @@
 							<h5 class="text-center mt-5 text-blue">
 								Certified Gold & Diamonds
 							</h5>
+							<div class="line text-start position-absolute">
+								<div class="divider"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -985,6 +1023,9 @@
 							<h4 class="text-center mt-5 text-blue">
 								Endless Options
 							</h4>
+							<div class="line text-start position-absolute">
+								<div class="divider"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -995,6 +1036,9 @@
 							<h4 class="text-center mt-5 text-blue">
 								Hassle-Free Returns
 							</h4>
+							<div class="line text-start position-absolute">
+								<div class="divider"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1073,29 +1117,29 @@
 								<h3 class="foot-title">NEWSLETTER</h3>
 								<div class="input-group mb-3">
 									<input type="text" class="form-control py-3 fs-15 bg-transparent border rounded" placeholder="Write your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-									<a href="#" class="input-group-text btn btn-gold mx-1" id="basic-addon2"><i class="fas fa-share fs-15 text-white mt-3"></i></a>
+									<a href="#" class="input-group-text btn btn-gold mx-1" id="basic-addon2"><i class="fas fa-paper-plane fs-16 px-2 text-white mt-3"></i></a>
 								</div>
 								<h3 class="foot-title mt-3">Follow Us On</h3>
-								<div class="row justify-content-start">
+								<div class="row justify-content-start ">
 									<div class="col-2 border-footer mx-1">
-										<span>
-											<i class=" fab fa-facebook-f"></i>
-										</span>
+										<a href="#">
+											<i class=" fab fa-facebook-f text-white"></i>
+										</a>
 									</div>
 									<div class="col-2 border-footer mx-1">
-										<span>
-											<i class="fab fa-twitter"></i>
-										</span>
+										<a href="#">
+											<i class="fab fa-twitter text-white"></i>
+										</a>
 									</div>
 									<div class="col-2 border-footer mx-1">
-										<span>
-											<i class="fab fa-instagram"></i>
-										</span>
+										<a href="#">
+											<i class="fab fa-instagram text-white"></i>
+										</a>
 									</div>
 									<div class="col-2 border-footer  mx-1">
-										<span>
-											<i class="fab fa-whatsapp"></i>
-										</span>
+										<a href="#">
+											<i class="fab fa-whatsapp text-white"></i>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -1113,19 +1157,19 @@
 				<div class="col-4 col-sm-4 col-md-5 col-lg-3">
 					<div class="row justify-content-lg-end justify-content-start">
 						<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="content-img border-foots">
+							<a href="#" class="content-img border-foots">
 								<img src="./assets/images/icons (1).png" alt="">
-							</div>
+							</a>
 						</div>
 						<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="content-img border-foots">
+							<a href="#" class="content-img border-foots">
 								<img src="./assets/images/icons (3).png" alt="">
-							</div>
+							</a>
 						</div>
 						<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="content-img border-foots">
+							<a href="#" class="content-img border-foots">
 								<img src="./assets/images/icons (2).png" alt="">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -1133,6 +1177,72 @@
 		</div>
 	</footer>
 	<!-- ---Footer-section-End-from-here--- -->
+
+<!-- ---------OffCanvas-start-from-here---- -->
+<div class="offcanvas-sm offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	<div class="offcanvas-body">
+      <div class="container-fluid">
+        <ul class="fs-15 p-0 m-0">
+            <li class="nav-item">
+                <a href="#">
+                    <img src="./assets/images/bdv-logo.png" class="img-fluid" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">
+                    Sing In / Register
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Fine Jewelry
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Gemstone Jewelry
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Pre-Owned 
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Local Artists
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Sell With Us
+                </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    Customer service
+                </a>
+            </li>
+            <hr>
+    
+          </ul>
+          <p class="fs-15 fw-bold">Call Us</p>
+          <p class="fs-15">Email:
+             <a href="#" class="text-decoration-underline">
+                customercare.me@BDV.com
+            </a>
+          </p>
+          <p class="fs-15">Call:
+             <span class="fw-bold fs-16">
+                00800100148
+            </span>
+          </p>
+      </div>
+    </div>
+  </div>
+<!-- ---------OffCanvas-end-from-here---- -->
 
 
 
