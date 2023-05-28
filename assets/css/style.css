@@ -946,5 +946,6 @@ color: #2F4858;
 @media (max-width: 768px){
     .home-img-section{
         padding: 0 !important;
+        margin-bottom: 17px !important;
     }
 }
