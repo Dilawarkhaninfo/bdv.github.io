@@ -949,3 +949,9 @@ color: #2F4858;
         margin-bottom: 17px !important;
     }
 }
+@media (max-width: 576px){
+    .home-img-section{
+        padding: 0 !important;
+        margin-bottom: 35px !important;
+    }
+}
