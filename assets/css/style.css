@@ -118,7 +118,7 @@ li{
 .mid-bar .nav-link{
     padding: 7px 40px !important;
 }
-.mid-bar .navbar{
+.mid-bar{
     border-bottom: 1px solid #fff !important;
 }
 /* ----navbar-styling-end-from-here-- */
@@ -822,8 +822,8 @@ color: #2F4858;
     color: #000000 !important;
 }
 @media (max-width:768px){
-    .mid-bar .navbar{
-        border-bottom: none !important;
+    .mid-bar{
+        display: none !important;
     }
     .about-section{
         height: 200vh !important;
@@ -865,7 +865,6 @@ color: #2F4858;
 .mid-bar{
     position: absolute !important;
     top: 15%;
-    right: 20% !important;
     z-index: 2  !important;
 
 }
@@ -892,13 +891,16 @@ color: #2F4858;
     .mid-bar .navbar{
         border-bottom: none !important;
     }
-    .home-img-section{
-        height: 60vh !important;
-        padding: 0 !important;
+    .home-img-section {
+        height: 15vh !important;
     }
     .about-section{
-        padding-bottom: 230vh !important;
+        padding-bottom: 130vh !important;
     }
+    .home-img-section{
+        padding-top: 0 !important;
+    }
+    
 }
 
 .dropdown-item:focus {
@@ -939,4 +941,10 @@ color: #2F4858;
 
 .home-img-section{
     padding-top: 150px !important;
+}
+
+@media (max-width: 768px){
+    .home-img-section{
+        padding: 0 !important;
+    }
 }
